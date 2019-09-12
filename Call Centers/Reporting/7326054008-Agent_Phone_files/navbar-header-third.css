@@ -1,0 +1,19 @@
+﻿
+
+.navbar-header-third {
+    background-color: #ffffff;
+    color: #000000;
+    display: flexbox;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar-header-third  {
+        display: block;
+    }
+}

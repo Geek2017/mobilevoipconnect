@@ -1,0 +1,97 @@
+﻿var page = 0,
+    pageNumber = 1,
+    inCallback = false,
+    inCallbackForKendoGrid = false,
+    hasReachedEndOfInfiniteScroll = false;
+    hasReachedEndForKendoGrid = false;
+
+var scrollHandler = function () {
+    if (hasReachedEndOfInfiniteScroll == false &&
+        ($(window).scrollTop() >= $(document).height() - $(window).height())) {
+        loadMoreToInfiniteScrollTable(moreRowsUrl);
+    }
+}
+
+var scrollHandlerForKendoGrid = function () {
+    if (hasReachedEndForKendoGrid == false &&
+        ($(window).scrollTop() >= $(document).height() - $(window).height())) {
+        loadMoreToInfiniteScrollForKendoGrid(moreRowsUrl);
+    }
+}
+
+function loadMoreToInfiniteScrollTable(loadMoreRowsUrl) {
+    if (page > -1 && !inCallback) {
+        inCallback = true;
+        page++;
+        $("div#loading").show();
+        $.ajax({
+            type: 'GET',
+            url: loadMoreRowsUrl,
+            data: "pageNum=" + page,
+            success: function (data, textstatus) {
+                if (data != '') {
+                    $("table.infinite-scroll > tbody").append(data);
+                    $("table.infinite-scroll > tbody > tr:even").addClass("alt-row-class");
+                    $("table.infinite-scroll > tbody > tr:odd").removeClass("alt-row-class");
+                }
+                else {
+                    page = -1;
+                }
+
+                inCallback = false;
+                $("div#loading").hide();
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    }
+}
+
+function loadMoreToInfiniteScrollForKendoGrid(loadMoreRowsUrl) {
+    if (pageNumber > -1 && !inCallbackForKendoGrid) {
+        inCallbackForKendoGrid = true;
+        pageNumber++;
+        $("div#loading").show();
+
+        $.ajax({
+            type: 'POST',
+            url: loadMoreRowsUrl + "?pageNum=" + pageNumber,
+            data: searchCriteria,
+            success: function (data, textstatus) {
+                var jsonResult = JSON.parse(JSON.stringify(data))
+                if (jsonResult.Status = 'success') {
+                    if (data.Records.length > 0) {
+
+                        data.Records.forEach(function (item, index) {
+                            dataList.push(item);
+                        });
+
+                        $("#grid").data("kendoGrid").dataSource.read();
+                    }
+
+                    if (jsonResult.IsEndOfRecords) {
+                        showNoMoreRecordsForKendoGrid();
+                    }
+                }
+                else {
+                    pageNumber = -1;
+                }
+
+                inCallbackForKendoGrid = false;
+                $("div#loading").hide();
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("div#loading").hide();
+                inCallbackForKendoGrid = false;
+            }
+        });
+    }
+}
+
+function showNoMoreRecords() {
+    hasReachedEndOfInfiniteScroll = true;
+}
+
+function showNoMoreRecordsForKendoGrid() {
+    hasReachedEndForKendoGrid = true;
+}

@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings -->
+<html lang="en" class="k-webkit k-webkit76 gr__logindev_mobilevoipconnect_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>7326054008-Connect Me Voice</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./7326054008-Connect Me Voice-call recording_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./7326054008-Connect Me Voice-call recording_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./7326054008-Connect Me Voice-call recording_files/jquery-ui.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./7326054008-Connect Me Voice-call recording_files/bootstrap-select.min.css">
+
+    <link href="./7326054008-Connect Me Voice-call recording_files/jquery.datetimepicker.css" rel="stylesheet">
+<link href="./7326054008-Connect Me Voice-call recording_files/style.css" rel="stylesheet">
+<link href="./7326054008-Connect Me Voice-call recording_files/font-awesome.css" rel="stylesheet">
+
+    <link href="./7326054008-Connect Me Voice-call recording_files/kendo.common-bootstrap.min.css" rel="stylesheet">
+<link href="./7326054008-Connect Me Voice-call recording_files/kendo.bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+tr.txt-semibold svg, table.mbox tr.txt-semibold a, .i colorNavBackgroundsvg {fill: #d41b2f !important;}
+.iconDisabled svg {fill: #d41b2f !important;}
+.iconActive svg {fill: #d41b2f !important;}
+#sortable1 thead tr .headerSortDown, #sortable1 thead tr .headerSortUp, .cmv-sortable thead tr .headerSortDown, .cmv-sortable thead tr .headerSortUp, .headerAscending, .headerDescending {background-color: #d41b2f;}
+.red-heading {color: #d41b2f;}
+.cvm-header {background-color: #e01c32;background-image: none;}
+.navbar-header-second, .navbar-header-second a {background-color: #000000;color: #ffffff;}
+.navbar-header-second .nhs-list li {border-right-color: #ffffff;}
+.navbar-header-third .nhs-list > li.active a {color: #d41b2f;}
+.main-wrapper .form-section-container a {color: #d41b2f;}
+.navbar-header-third .nhs-list > li.active {border-bottom-color: #d41b2f;}
+.tabs-section .nav-tabs.active a {color: #d41b2f !important;border-bottom-color: #d41b2f;}
+.tabs-section .nav-tabs.active a {color: #d41b2f !important;border-bottom-color: #d41b2f;}
+.tabs-section .nav-tabs.active a {color: #d41b2f !important;border-bottom-color: #d41b2f;}
+.cvm-table-box .table-header-second:not(.ths-black) a {color: #ffffff !important;}
+.cvm-table-box .cvm-table tbody a {color: #d41b2f !important;}
+.cvm-breadcrumb > .active {color: #d41b2f;}
+#wrapper .cvm-header-top, .side-nav {background-color: #545454;}
+.side-nav li.swipe-icon a:hover, .side-nav li.swipe-icon a:focus {outline: none; background-color: #545454 !important; color: #ffffff;}
+#mainLogo {max-height:40px !important;}
+.side-nav li.toggle-btn > a:hover {background-color: #545454 !important;}
+.cvm-table-box .table-header, .cvm-table-box .table-header-second.ths-black {background-color: #000000;}
+.cvm-table-box .table-header-second {background-color: #a8cbf6;}
+.selectedPageNo a{background-color: #d41b2f !important;}
+.btn-secondary, .cvm-pagination > li > a.btn-secondary {background-color: #d41b2f;}
+.btn-login {background-color: #d41b2f;}
+.cvm-header .navbar-brand {padding-top: 5px;}</style>
+
+    <!-- jQuery -->
+    <script src="./7326054008-Connect Me Voice-call recording_files/jquery_3_2_0.min.js.download"></script>
+    
+    <script src="./7326054008-Connect Me Voice-call recording_files/jquery.datetimepicker.full.min.js.download"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./7326054008-Connect Me Voice-call recording_files/bootstrap-select.min.js.download"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./7326054008-Connect Me Voice-call recording_files/bootstrap.min.js.download"></script>
+
+    <script src="./7326054008-Connect Me Voice-call recording_files/kendo.all.min.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/kendo.aspnetmvc.min.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/jszip.min.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/moment.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/pako_deflate.min.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/cmv-kendo-grid-print.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/cmv-kendo-grid-pdf.js.download"></script>
+
+    <script src="./7326054008-Connect Me Voice-call recording_files/jquery.validate.js.download"></script>
+<script src="./7326054008-Connect Me Voice-call recording_files/jquery.validate.unobtrusive.js.download"></script>
+
+    <script src="./7326054008-Connect Me Voice-call recording_files/infiniteScroll.js.download"></script>
+
+
+
+    <script>
+
+        function expandCollapseLeftNav() {
+            var cookie = getCookie('__AppNav');
+
+            if (cookie == null) {
+                var $pageMain = $('#page-main');
+                var $expandIcon = $('.expand-icon');
+                var windowsize = $(window).width();
+
+                if (windowsize > 1599) {
+                    if (!$pageMain.hasClass('nav-visible')) {
+                        $pageMain.addClass('nav-visible');
+
+                        if (!$expandIcon.hasClass('rotate')) {
+                            $expandIcon.addClass('rotate');
+                        }
+                    }
+                }
+                else {
+                    if ($pageMain.hasClass('nav-visible')) {
+                        $pageMain.removeClass('nav-visible');
+
+                        if ($expandIcon.hasClass('rotate')) {
+                            $expandIcon.removeClass('rotate');
+                        }
+                    }
+                }
+            }
+        }
+
+        $(document).on("click", ".confirmThis", function () {
+            var headingtext = $(this).data('heading');
+            $("#confirmHeading").html(headingtext);
+            var question = $(this).data('question');
+            $("#confirmQuestion").html(question);
+            var actiontext = $(this).data('actiontext');
+            $("#confirmActionLink").text(actiontext);
+            var actionurl = $(this).data('actionurl');
+            $("#confirmActionLink").attr("href", actionurl);
+            var canceltext = $(this).data('canceltext');
+            $("#confirmCancelLink").text(canceltext);
+            var cancelurl = $(this).data('cancelurl');
+            $("#confirmCancelLink").attr("href", cancelurl);
+        });
+
+        function CloseConfirm() {
+            $('#confirmModal').modal('hide');
+            //$('.modal-backdrop').hide(); // fail-safe
+        }
+
+        $(document).on("click", ".alertThis", function () {
+            var headingtext = $(this).data('heading');
+            $("#alertHeading").html(headingtext);
+            var alertText = $(this).data('alerttext');
+            $("#alertText").html(alertText);
+            var closetext = $(this).data('closeltext');
+            $("#alertOKLink").text(closetext);
+        });
+
+        function CloseAlert() {
+            $('#alertModal').modal('hide');
+        }
+
+        $(document).ready(function () {
+
+            messageBox($('#msgBox'));
+
+        });
+
+        function toggleNavExpension() {
+            var $pageMain = $('#page-main');
+            var $expandIcon = $('.expand-icon');
+            var expended = false;
+
+            if ($pageMain.hasClass('nav-visible')){
+                $pageMain.removeClass('nav-visible');
+
+                if ($expandIcon.hasClass('rotate')) {
+                    $expandIcon.removeClass('rotate');
+                }
+
+                expended = false;
+            }
+            else {
+                $pageMain.addClass('nav-visible');
+                $expandIcon.addClass('rotate');
+                expended = true;
+            }
+
+            setCookie('__AppNav', 'expended=' + expended, 400);
+        }
+
+        function messageBox(obj) {
+            var headingtext = $(obj).data('heading');
+            $("#alertMessageHeading").html(headingtext);
+            var alertText = $(obj).data('alerttext');
+            $("#alertMessageText").html(alertText);
+            var closetext = $(obj).data('closetext');
+            $("#alertMessageOKLink").text(closetext);
+
+            if (alertText == undefined || alertText == '') {
+                return;
+            }
+
+            $('#messageBox').modal('toggle');
+        }
+
+        function closeMsgBox() {
+            $('#messageBox').modal('hide');
+        }
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            document.cookie = name + '=; Max-Age=-99999999;';
+        }
+
+        function PopupWindow(url, title, w, h) {
+            var popUpWin = 0;
+            var left = (screen.width / 2) - (w / 2);
+            var top = (screen.height / 2) - (h / 2);
+
+            if (popUpWin) {
+                if (!popUpWin.closed)
+                    popUpWin.close();
+            }
+            popUpWin = open(url, '_blank', 'toolbar=no,location=no,directories=no,status=no,menub ar=no,scrollbar=no,resizable=no,copyhistory=yes,width=' + w + ',height=' + h + ',left=' + left + ', top=' + top + ',screenX=' + left + ',screenY=' + top + '');
+            popUpWin.focus();
+
+            //return window.open(url, '_blank', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left, false);
+        }
+
+        //KeyLock functionality definition starts here
+        function globalAllowedKeys(type, e, control) {
+            var arr = [];
+            if (type == 'specialalphabet') {
+                arr = [46, 8, 9, 27, 13, 144, 57, 48, 190, 109, 188, 189];
+            } else if (type == 'numeric') {
+                arr = [46, 8, 9, 27, 13, 144];
+            } else if (type == 'decimal') {
+                if ($(control).val().indexOf('.') > -1) {
+                    arr = [46, 8, 9, 27, 13, 190, 144];
+                }
+                else {
+                    arr = [46, 8, 9, 27, 13, 110, 190, 144];
+                }
+            } else {
+                arr = [46, 32, 8, 9, 27, 13, 110, 190, 109, 107, 144];
+            }
+
+            if ($.inArray(e.keyCode, arr) !== -1 ||
+                // Allow: Ctrl+A
+                (e.keyCode == 65 && e.ctrlKey === true) ||
+                // Allow: Ctrl+C
+                (e.keyCode == 67 && e.ctrlKey === true) ||
+                // Allow: Ctrl+X
+                (e.keyCode == 86 && e.ctrlKey === true) ||
+                // Allow: Ctrl+V
+                (e.keyCode == 88 && e.ctrlKey === true) ||
+                // // Allow: Ctrl+Shift+R
+                (e.keyCode == 82 && e.keyCode == 16 && e.ctrlKey === true) ||
+                //Allow Shift Key
+                (e.keyCode == 16) ||
+
+                // Allow: home, end, left, right,down
+                (e.keyCode >= 35 && e.keyCode <= 40) && !(e.keyCode == 190 && e.shiftKey)) {
+                // let it happen, don't do anything
+                if ((e.keyCode === 190 && e.shiftKey))
+                    return false;
+
+
+                return true;
+            } else { return false; }
+
+        }
+        function NumericAllowedKeys(e) {
+
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+        function SpecialAllowedCharacter(e) {
+            if ($.inArray(e.keyCode, [17, 32, 38, 48, 49, 50, 52, 55, 57, 173, 186, 189, 191, 192, 219, 220, 221, 222, 111, 110, 109, 9]) !== -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function AlphabetAllowedKeys(e) {
+            if (e.keyCode >= 65 && e.keyCode <= 90 || e.keyCode == 32) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function NumericKeysWithDot(e) {
+            if (e.keyCode != 190) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        function getAllowedKeys(identifier, e, control) {
+
+            switch ($.trim(identifier.toLowerCase())) {
+                case 'special-alphanumeric':
+                    if (globalAllowedKeys('specialalphabet', e) || (NumericAllowedKeys(e) || AlphabetAllowedKeys(e))) {
+                    }
+                    else {
+                        e.preventDefault();
+                    }
+                    break;
+                case 'alphanumeric':
+                    if (globalAllowedKeys('numeric', e) || (NumericAllowedKeys(e) || AlphabetAllowedKeys(e))) {
+                    }
+                    else {
+                        e.preventDefault();
+                    }
+                    break;
+                case 'alphabet':
+                    if (globalAllowedKeys('', e) || AlphabetAllowedKeys(e)) {
+                    }
+                    else {
+                        e.preventDefault();
+                    } break;
+                case 'numeric':
+                    if (globalAllowedKeys('numeric', e) || NumericAllowedKeys(e)) {
+                    }
+                    else {
+                        e.preventDefault();
+                    }
+                    break;
+                case 'decimal':
+                    if (globalAllowedKeys('decimal', e, control) || NumericAllowedKeys(e)) {
+                    }
+                    else {
+                        e.preventDefault();
+                    }
+                    break;
+                case 'ipaddress':
+                    if (globalAllowedKeys('ipaddress', e, control) || NumericAllowedKeys(e)) {
+                    }
+                    else {
+                        e.preventDefault();
+                    }
+                    break;
+                default:
+                    return;
+
+
+            }
+
+
+        }
+
+        function KeyLocking(className, dataAttr) {
+            $(className).each(function () {
+                $(this).keydown(function (e) {
+                    getAllowedKeys($(this).attr(dataAttr), e, this);
+
+                });
+            });
+        }
+        //Keylocking definition ends here
+
+        function collapseLeftNavSection() {
+            $('.collapse').collapse('hide');
+        }
+
+        $(document).ready(function () {
+            KeyLocking('.hasKeyLocking', 'data-keylocking');
+
+            $('ul.nav a[data-toggle="collapse"]').click(function () {
+                collapseLeftNavSection();
+            });
+
+            expandCollapseLeftNav();
+        });
+
+    </script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+    <div id="wrapper">
+        
+
+<div class="cvm-header-top">
+    <ul class="nav navbar-nav side-nav">
+        <li class="toggle-btn">
+            <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </a>
+        </li>
+        <li class="swipe-icon">
+            <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#" onclick="toggleNavExpension();">
+                <div class="licon-box">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg" width="18" height="20" class="expand-icon rotate" viewBox="0 0 282.02 384.02"><title>pin</title><path d="M37.33,221.08c2.33-1.77,3.55-2.75,4.83-3.64C55,208.49,68,199.68,80.64,190.5a10.73,10.73,0,0,0,3.9-6.74c4.44-40.22,8.48-80.49,13-120.7.78-6.91-.32-11.69-6-16.24A270.72,270.72,0,0,1,64.15,21.26L214.64,19.5l-9.87,9.85c-5.32,5.29-10.54,10.68-16,15.81A9.15,9.15,0,0,0,185.54,53c1.71,38.62,4,77.23,4.46,115.87.16,13,4.6,19.94,15.69,25.56,13.47,6.82,26.07,15.38,39,24.4l-93.87,2.93q-5.5,71.54-11,142.79l-.76,0q-3.18-38.78-6.34-77.53c-1.72-21.08-3.48-42.17-5.06-63.26-.26-3.46-2.16-3.49-4.67-3.46q-38.74.47-77.49.84C43.23,221.1,41,221.08,37.33,221.08Z"></path></svg>
+                </div>
+            </a>
+        </li>
+        <li class="first-icon active">
+            <a href="javascript:;" data-toggle="collapse" data-target="#mailbox" data-parent="#accordion" class="" aria-expanded="true">
+                <div class="licon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                        <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M32.484,142H17.516A0.488,0.488,0,0,1,17,141.548v-4.154h0V137h0.1l2.221-8.639A0.512,0.512,0,0,1,19.839,128H30.419a0.516,0.516,0,0,1,.516.361L32.91,137H33v4.548A0.488,0.488,0,0,1,32.484,142ZM29.5,130.361A0.516,0.516,0,0,0,28.982,130H21.276a0.512,0.512,0,0,0-.516.361L19.1,137H23a2,2,0,0,0,4,0h3.916Z" transform="translate(-17 -128)"></path>
+                    </svg>
+                </div>
+                <span>Mailbox</span>
+                <i class="fa fa-fw fa-caret-right pull-right"></i>
+            </a>
+            <ul id="mailbox" class="context collapse in" aria-expanded="true" style="">
+                <li class="hideMenu">
+    <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Inbox">
+        <div class="licon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                <path id="Forma_1_copy_9" data-name="Forma 1 copy 9" class="cls-1" d="M32.435,654H17.565A0.553,0.553,0,0,1,17,653.466V640.534A0.544,0.544,0,0,1,17.565,640H23.5a0.573,0.573,0,0,1,.413.182L25.63,642h6.805a0.545,0.545,0,0,1,.565.534v10.937A0.545,0.545,0,0,1,32.435,654ZM31,644H24.833l-1.75-2H19v10H31v-8Z" transform="translate(-17 -640)"></path>
+            </svg>
+        </div>
+        <span>Inbox</span>
+    </a>
+</li>
+
+<li class="hideMenu">
+    <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Deleted">
+        <div class="licon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                <path id="Forma_1_copy_9" data-name="Forma 1 copy 9" class="cls-1" d="M32.435,654H17.565A0.553,0.553,0,0,1,17,653.466V640.534A0.544,0.544,0,0,1,17.565,640H23.5a0.573,0.573,0,0,1,.413.182L25.63,642h6.805a0.545,0.545,0,0,1,.565.534v10.937A0.545,0.545,0,0,1,32.435,654ZM31,644H24.833l-1.75-2H19v10H31v-8Z" transform="translate(-17 -640)"></path>
+            </svg>
+        </div>
+        <span>Deleted</span>
+    </a>
+</li>
+
+    <li id="myTable" class="hideMenu">
+        <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Saved">
+            <div class="licon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                    <path id="Forma_1_copy_9" data-name="Forma 1 copy 9" class="cls-1" d="M32.435,654H17.565A0.553,0.553,0,0,1,17,653.466V640.534A0.544,0.544,0,0,1,17.565,640H23.5a0.573,0.573,0,0,1,.413.182L25.63,642h6.805a0.545,0.545,0,0,1,.565.534v10.937A0.545,0.545,0,0,1,32.435,654ZM31,644H24.833l-1.75-2H19v10H31v-8Z" transform="translate(-17 -640)"></path>
+                </svg>
+            </div>
+            <span>Saved</span>
+        </a>
+    </li>
+    <li id="myTable" class="hideMenu">
+        <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings">
+            <div class="licon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                    <path id="Forma_1_copy_9" data-name="Forma 1 copy 9" class="cls-1" d="M32.435,654H17.565A0.553,0.553,0,0,1,17,653.466V640.534A0.544,0.544,0,0,1,17.565,640H23.5a0.573,0.573,0,0,1,.413.182L25.63,642h6.805a0.545,0.545,0,0,1,.565.534v10.937A0.545,0.545,0,0,1,32.435,654ZM31,644H24.833l-1.75-2H19v10H31v-8Z" transform="translate(-17 -640)"></path>
+                </svg>
+            </div>
+            <span>Call Recordings</span>
+        </a>
+    </li>
+<li class="hideMenu">
+    <a data-target="#confirmModal" data-toggle="modal" class="confirmThis" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#confirmModal" data-heading="Empty Folder" data-question="Are you sure you want to empty the Deleted folder?" data-actiontext="OK" data-actionurl="/Mailbox/EmptyDeleted" data-canceltext="Cancel"><span>Empty Deleted Folder</span></a>
+</li>
+<li id="addNewfolder" class="hideMenu">
+    <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#" id="lnkAddNewFolder" data-target="#newFolderModal" data-toggle="modal">
+        <span>Add New Folder</span>
+    </a>
+</li>
+<li class="hideMenu">
+    <a href="https://logindev.mobilevoipconnect.com/Mailbox/Global/Notifications">
+        <span>Notifications</span>
+    </a>
+</li>
+<li class="hideMenu"><a href="https://logindev.mobilevoipconnect.com/Mailbox/VoicemailDistributionLists"><span>VM Blast</span></a></li>
+<li class="hideMenu"><a href="https://logindev.mobilevoipconnect.com/Mailbox/MessageForwarding"><span>Message Forwarding</span></a></li>
+<div>
+    <ul id="contextMenu" class="dropdown-menu" role="menu" style="display:none">
+        <li><a tabindex="-1" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#">Delete Folder</a></li> 
+        <li><a tabindex="-1" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#">Rename Folder</a></li> 
+        <li>
+    </li></ul>
+</div>
+
+<input type="hidden" id="deleteFolder" data-target="#confirmModal" class="confirmThis" data-toggle="modal" data-actiontext="OK" data-canceltext="Cancel">
+
+<script>
+    $(document).ready(function () {
+        $('#addNewfolder').on('shown.bs.modal', function () {
+            $('#folderName').val('');
+        });
+
+        $('#renameFolder').on('shown.bs.modal', function () {
+            $('#folderName').val('');
+            $('#oldFolderName').val('');
+        });
+
+        (function ($, window) {
+            $.fn.contextMenu = function (settings) {
+                return this.each(function () {
+
+                    // Open context menu
+                    $(this).on("contextmenu", function (e) {
+                        // return native menu if pressing control
+                        if (e.ctrlKey) return;
+
+                        //open menu
+                        var $menu = $(settings.menuSelector)
+                            .data("invokedOn", $(e.target))
+                            .show()
+                            .css({
+                                position: "absolute",
+                                left: getMenuPosition(e.clientX, 'width', 'scrollLeft'),
+                                top: getMenuPosition(e.clientY, 'height', 'scrollTop'),
+                                width: '20px'
+                            })
+                            .off('click')
+                            .on('click', 'a', function (e) {
+                                $menu.hide();
+                                var $invokedOn = $menu.data("invokedOn");
+                                var $selectedMenu = $(e.target);
+
+                                settings.menuSelected.call(this, $invokedOn, $selectedMenu);
+                            });
+
+                        return false;
+                    });
+
+                    //make sure menu closes on any click
+
+                    $('.hideMenu').click(function () {
+                        $(settings.menuSelector).hide();
+                    });
+
+                    $('body').click(function () {
+                        $(settings.menuSelector).hide();
+                    });
+                });
+
+                function getMenuPosition(mouse, direction, scrollDir) {
+                    var win = $(window)[direction](),
+                        scroll = $(window)[scrollDir](),
+                        menu = $(settings.menuSelector)[direction](),
+                        position = mouse + scroll;
+
+
+                    // opening menu would pass the side of the page
+                    if (mouse + menu > win && menu < mouse)
+                        position -= menu;
+
+                    return position - 69;
+                }
+
+            };
+        })(jQuery, window);
+
+        $('.context .context-li').contextMenu({
+            menuSelector: "#contextMenu",
+            menuSelected: function (invokedOn, selectedMenu) {
+
+                var folderName = invokedOn.text().trim();
+                var $deleteFolder = $('#deleteFolder');
+                var $renameFolder = $('#renameFolder');
+
+
+                if (selectedMenu.text() == 'Delete Folder') {
+
+                    $deleteFolder.attr('data-heading', 'Delete Folder');
+                    $deleteFolder.attr('data-question', 'Are you sure to delete folder ' + folderName.trim());
+                    $deleteFolder.attr('data-actionurl', "/Mailbox/DeleteFolder" + '?folderName=' + folderName.trim());
+                    $deleteFolder.trigger('click');
+                }
+                else if (selectedMenu.text() == 'Rename Folder') {
+                    $renameFolder.find('#oldFolderName').val(folderName);
+                    $renameFolder.find('#folderName').val(folderName);
+                    $renameFolder.modal('show');
+                }
+            }
+        });
+    })
+</script>
+
+            </ul>
+        </li>
+            <li>
+                <a href="https://logindev.mobilevoipconnect.com/ExtensionManager/ListExtensions">
+                    
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="cls-1" d="M32.707,508.707L31.414,510l1.293,1.293a1,1,0,0,1-1.414,1.414,4,4,0,0,0-1.465,1.121,3.985,3.985,0,0,1-4.076.955l-1.484,1.485a2.5,2.5,0,0,1-3.536,0l-0.879-1.122a0.5,0.5,0,1,0-.707.708l3.561,3.439a1,1,0,0,1-1.414,1.414l-3.561-3.439a2.5,2.5,0,1,1,3.536-3.536l0.879,1.122a0.5,0.5,0,0,0,.707,0l1.186-1.187a3.989,3.989,0,0,1,.132-5.5,4,4,0,0,0,1.121-1.465,1,1,0,1,1,1.414-1.414L28,506.586l1.293-1.293a1,1,0,0,1,1.414,1.414l-1.2,1.2a3.912,3.912,0,0,1,.322.264,3.856,3.856,0,0,1,.263.322l1.2-1.2A1,1,0,0,1,32.707,508.707Z" transform="translate(-17 -505)"></path>
+                        </svg>
+                    </div>
+                    <span>Extension Manager</span>
+                </a>
+            </li>
+                                    <li>
+                <a href="https://logindev.mobilevoipconnect.com/RingGroups/ListRingGroups">
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 200 200">
+                            <path d="M 100, 100m -75, 0a 75,75 0 1,0 150,0a 75,75 0 1,0 -150,0"></path>
+                        </svg>
+                    </div>
+                    <span>Ring Groups</span>
+                </a>
+            </li>
+                                            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#scheduling" class="collapsed" aria-expanded="false">
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20.659px" height="20.658px" viewBox="0 0 569.659 569.658" style="enable-background:new 0 0 569.659 569.658;" xml:space="preserve">
+                        <g>
+                        <path d="M512.112,127.667c16.2-17.1,22.3-49.3,18.101-69.8c-4.9-22.3-23.9-38.2-44.7-45c-13.8-4.6-30-4.6-43.8,0.6    c-11.301-7-25.101-10.1-38.2-9.2c-10.7,0.6-20.5,3.7-29.4,8.6c-15.3-8.9-35.2-8.9-52-5.5c-5.5,1.2-12.2,3.4-19,7l0,0    c-15.899-16.5-41.9-16.5-62.4-11.3c-6.4,1.5-13.5,4.6-20.2,8.3c-17.1-7-37.6-8-54.5-6.4c-7.7,0.6-15.9,2.1-23.9,4.3    c-12.2-4.6-26.6-4-39.8-0.6c-37.3,9.2-90.6,56.9-49,93.9c5.5,4.9,11.3,8.3,18.1,11.3c-7.6,7.3-12.9,15.9-14.7,26    c-1.2,0.9-2.1,2.4-2.8,4c-18.1,67.3-14.7,135.6-11.3,204.4c2.4,51.699-4,106.199,21.4,153.3c39.5,72.8,156.4,59.1,223.7,62.7    c70.399,4,184.8,25.1,220.3-56.601c22.3-51.7,16.8-124.5,16.5-179.3C523.412,263.567,524.012,191.667,512.112,127.667z     M480.012,32.267c14.399,4.9,26,16.2,30,31.2c2.399,9.2,0.3,18.7-2.4,27.2c-1.8,5.8-5.2,11-8.6,16.2c-9.5-8.3-22.3-13.8-35.8-17.1    c6.699-19,3.699-44.1-5.801-60C464.712,28.867,472.612,30.067,480.012,32.267z M437.412,37.167c0.601,0.6,1.2,1.2,1.801,2.1    c10.1,14.7,4.899,30.3,3.399,45.9c-6.1-0.9-11.899-1.8-17.399-2.8C426.412,66.467,423.712,48.467,437.412,37.167z M402.912,23.967    c6.4-0.3,13.2,0.3,19.301,2.8c-12.5,14.4-16.2,36.7-8.601,54.2c-5.8-0.9-11.6-1.5-17.399-2.4c4.3-17.1,1.199-37-8.301-51.4    C392.812,25.467,397.712,24.567,402.912,23.967z M370.412,37.167c8.9,10.7,5.801,25.4,4.301,39.2c-6.101-0.6-12.2-0.9-18.4-1.2    C355.712,59.767,360.612,46.367,370.412,37.167z M327.012,26.767c8.6-1.8,19-2.1,27.8,0.6c-11.3,12.5-16.8,29.4-13.2,46.5    c-8-0.3-16.2-0.9-24.2-0.9c2.4-13.5,0.601-29.4-4.899-42.2C317.512,28.867,322.412,27.667,327.012,26.767z M293.612,39.867    c3.7,10.1,0.9,21.7-0.3,32.7c-4.9,0-10.1,0.3-15,0.3C273.712,58.567,281.712,47.567,293.612,39.867z M245.612,23.067    c11.9-3.1,26.3-3.7,37,3.1c-17.1,13.2-29.7,30.6-19.6,46.8c-2.8,0-5.8,0-8.6,0c-1.8,0-4,0-6.1,0.3c5.5-16.2,2.8-35.8-8.6-48.3    C241.912,24.267,243.712,23.667,245.612,23.067z M218.712,35.567c0.6,0.3,1.5,0.9,2.1,1.2c15,10.1,7.7,24.5,2.1,37.6    c-5.5,0.3-11.3,0.6-17.4,0.9C193.912,59.467,204.012,45.367,218.712,35.567z M165.412,26.167c10.7-1.2,22-0.9,33,1.5    c-14.4,14.7-21.4,33-8.6,49c-7,0.6-14.4,1.5-21.7,2.4c4-18.4,3.7-38.2-5.2-52.3C163.912,26.467,164.812,26.467,165.412,26.167z     M114.612,46.967c5.5-7,14.1-11.6,22.9-15c0.9,0.6,1.5,0.9,2.1,1.5c5.5,4.6,7.7,11.9,8,20.8c0.3,10.1-2.1,19.3-4.9,28.8    c-7.7,1.5-15,3.4-22,5.5C111.912,75.667,104.212,60.067,114.612,46.967z M62.912,85.167c-4.9-6.7-4.9-11.9-3.1-18.7    c4.3-13.8,21.4-26,35.8-32.1c2.1-0.9,4.3-1.8,6.4-2.4c-1.8,2.1-3.4,4-4.9,6.4c-12.2,19-3.7,39.5,10.1,54.5    c-8.3,3.1-16.2,6.4-23,10.7C76.112,98.667,68.112,92.867,62.912,85.167z M490.712,438.567c-5.5,64-25.7,94.899-91.2,100.7    c-37,3.399-75.3-1.2-112.3-3.7c-67.3-4.3-175.3,12.2-206.9-64.9c-18.4-45-9.2-111.1-11.6-159.399c-1.5-28.5-2.1-56.9-1.8-85.101    c35.2,15,156.7-6.4,176.3-8c52-4,104.3-7.7,156.7-8.3c18.7-0.3,37.301,0.3,56,2.1c10.4,0.9,27.801,7.7,27.801,7.3    c0.899,5.2,5.5,7.6,10.399,8C498.312,297.867,496.512,370.967,490.712,438.567z"></path>
+
+
+
+
+
+
+
+                        <path d="M261.512,460.967c-21.7-1.8-43.8-1.8-65.5-1.199c42.5-44.4,87.8-114.4,54.2-164c-37.6-55.7-125.2-0.9-116.3,56.6    c1.5,9.5,18.1,9.5,19.3,0c3.4-24.2,16.5-41.6,40.1-49.6c28.8-9.801,44.7,16.5,38.9,41.899c-9.8,45-49,91.8-84.1,120.3    c-10.4,8.301-1.5,25.101,10.4,25.101c34.3,0,69.2,2.1,103.4-0.9C279.212,486.967,279.212,462.467,261.512,460.967z"></path>
+
+
+
+
+
+
+
+                        <path d="M411.412,330.268c-16.199-19-41-13.2-61.5-2.801c0-10.1,0-20.199,0-30c22,0.9,46.801,2.4,64-10.699    c6.7-5.2,4.601-15.601-4.3-16.2c-24.5-1.5-49.3-0.6-73.7-1.5c-7.6-0.3-14.1,6.7-14.1,14.1c-0.3,23.3-0.3,46.8-0.3,70.101    c0,10.1,12.5,19,21.399,12.199c10.7-7.699,35.2-27.5,48.301-14.699c10.699,10.399,8,34.3,5.5,47.1c-3.101,17.4-9.5,35.8-21.7,48.7    c-14.4,15-27.2-4.601-37-14.4c-11.3-11.3-28.5,3.101-21.4,16.5c12.9,24.8,40.4,39.8,67,27.5c24.8-11.6,36.7-45.899,41.3-70.7    C429.512,379.867,428.912,350.467,411.412,330.268z"></path>
+
+
+
+
+
+
+
+                       </g>
+                        </svg>
+                    </div>
+                    <span>Scheduling</span><i class="fa fa-fw fa-caret-right pull-right"></i>
+                </a>
+                <ul id="scheduling" class="collapse" aria-expanded="false">
+                    <li><a href="https://logindev.mobilevoipconnect.com/Scheduling/OfficeHours"><span>Scheduling</span></a></li>
+                        <li><a href="https://logindev.mobilevoipconnect.com/Scheduling/EmergencyControls"><span>Emergency Scheduling</span></a></li>
+                </ul>
+            </li>
+                    <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#callCenter" class="collapsed" aria-expanded="false">
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path class="cls-1" d="M29.578,460a5,5,0,1,0-9.156,0H17v-4h1.325a6.955,6.955,0,0,1,13.35,0H33v4H29.578ZM22,461h6a4,4,0,0,1,4,4,2,2,0,0,1-2,2H20a2,2,0,0,1-2-2A4,4,0,0,1,22,461Zm-1.333,4h8.667A0.666,0.666,0,0,0,30,464.333,1.333,1.333,0,0,0,28.667,463H21.333A1.333,1.333,0,0,0,20,464.333,0.666,0.666,0,0,0,20.667,465ZM22,458a3,3,0,1,1,3,3A3,3,0,0,1,22,458Z" transform="translate(-17 -451)"></path>
+                        </svg>
+                    </div>
+                    <span>Call Center</span>
+                    <i class="fa fa-fw fa-caret-right pull-right"></i>
+                </a>
+                <ul id="callCenter" class="collapse" aria-expanded="false">
+                    <li><a href="https://logindev.mobilevoipconnect.com/CallCenter"><span>Status</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/CallCenter/Reporting/AgentReport"><span>Reporting</span></a></li>
+                        <li><a href="https://logindev.mobilevoipconnect.com/CallCenter/Administration/ListQueues"><span>Administration</span></a></li>
+                </ul>
+            </li>
+        <li>
+            <a href="https://logindev.mobilevoipconnect.com/AudioFiles/ListMailboxGreetings">
+                <div class="licon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                        <g transform="matrix(.1615 0 0 .1615 1.704 1.632)" fill-opacity="1">
+                            <path id="Forma_1_copsy" data-name="Forma 1 copy" class="cls-1" d="m57.57 8.464c-1.412 0-2.634.517-3.666 1.548l-27.13 27.13h-21.346c-1.413 0-2.635.517-3.667 1.548-1.032 1.032-1.548 2.255-1.548 3.667v31.28c0 1.412.516 2.635 1.548 3.666 1.033 1.032 2.255 1.549 3.667 1.549h21.345l27.13 27.13c1.032 1.031 2.254 1.548 3.666 1.548 1.413 0 2.635-.517 3.667-1.548 1.032-1.031 1.548-2.254 1.548-3.666v-88.64c0-1.412-.516-2.635-1.547-3.667-1.033-1.031-2.254-1.548-3.667-1.548"></path>
+                            <path d="m90.61 69.53c2.309-3.557 3.463-7.399 3.463-11.527 0-4.128-1.154-7.988-3.463-11.573-2.31-3.585-5.363-6.11-9.166-7.577-.543-.271-1.223-.407-2.037-.407-1.412 0-2.635.503-3.666 1.507-1.031 1.01-1.549 2.241-1.549 3.707 0 1.141.326 2.105.979 2.893.652.788 1.439 1.467 2.363 2.037.922.57 1.846 1.195 2.77 1.874.924.679 1.711 1.643 2.363 2.892.65 1.25.977 2.798.977 4.645 0 1.847-.326 3.395-.977 4.645-.652 1.25-1.439 2.213-2.363 2.893-.924.679-1.848 1.304-2.77 1.874-.924.569-1.711 1.249-2.363 2.036-.652.789-.979 1.752-.979 2.893 0 1.467.518 2.702 1.549 3.707 1.031 1 2.254 1.508 3.666 1.508.814 0 1.494-.136 2.037-.406 3.803-1.523 6.857-4.063 9.166-7.621"></path>
+                            <path d="m108 81.02c4.617-7.03 6.926-14.705 6.926-23.02 0-8.311-2.309-15.982-6.926-23.02-4.617-7.03-10.729-12.152-18.332-15.357-.705-.271-1.412-.407-2.117-.407-1.412 0-2.635.516-3.668 1.548-1.031 1.032-1.547 2.254-1.547 3.666 0 2.119 1.059 3.721 3.178 4.808 3.041 1.575 5.105 2.77 6.191 3.584 4.02 2.934 7.156 6.613 9.41 11.04 2.254 4.427 3.381 9.139 3.381 14.14 0 4.997-1.127 9.709-3.381 14.14-2.254 4.428-5.391 8.106-9.41 11.04-1.086.815-3.15 2.01-6.191 3.585-2.119 1.087-3.178 2.689-3.178 4.808 0 1.412.516 2.635 1.547 3.666 1.033 1.033 2.281 1.549 3.748 1.549.652 0 1.332-.137 2.037-.407 7.603-3.206 13.715-8.325 18.332-15.359"></path>
+                        </g>
+                    </svg>
+                </div>
+                <span>Audio Files</span>
+            </a>
+        </li>
+            <li>
+                <a href="https://logindev.mobilevoipconnect.com/E911/E911AllPhones">
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M16 22.621l-3.521-6.795c-.007.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.082-1.026-3.492-6.817-2.106 1.039c-1.639.855-2.313 2.666-2.289 4.916.075 6.948 6.809 18.071 12.309 18.045.541-.003 1.07-.113 1.58-.346.121-.055 2.102-1.029 2.11-1.033zm-2.5-13.621c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm9 0c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-4.5 0c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"></path></svg>
+                        </svg>
+                    </div>
+                    <span>E911</span>
+                </a>
+            </li>
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#reports" class="collapsed" aria-expanded="false">
+                <div class="licon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                        <path id="Forma_1_copy_2" data-name="Forma 1 copy 2" class="cls-1" d="M31.089,494H18.911A0.959,0.959,0,0,1,18,493V479a0.959,0.959,0,0,1,.911-1H28l4,4v11A0.959,0.959,0,0,1,31.089,494ZM30,483l-2.87-3H20v12H30v-9Zm-2,1H22v-2h6v2Zm0,3H22v-2h6v2Zm0,3H22v-2h6v2Z" transform="translate(-18 -478)"></path>
+                    </svg>
+                </div>
+                <span>Reports</span>
+                <i class="fa fa-fw fa-caret-right pull-right"></i>
+            </a>
+            <ul id="reports" class="collapse" aria-expanded="false">
+                <li><a href="https://logindev.mobilevoipconnect.com/Reports/CallReport"><span>Call Report</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/CallReportCharts"><span>Call Report Chart</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/CallsByExtension"><span>Calls By Extension Summary</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/CallsByExtensionDetail"><span>Calls By Extension Detail</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/ConferenceBridgeSummary"><span>Conference Bridge Summary</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/ConferenceBridgeDetail"><span>Conference Bridge Detail</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/PhoneList"><span>Phone List</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/PhoneNumberUsage"><span>Phone Number Usage</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/E911Provision"><span>E911 Provision</span></a></li>
+                    <li><a href="https://logindev.mobilevoipconnect.com/Reports/ScheduledReports/ListScheduledReports"><span>Scheduled Reports</span></a></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#controlPanel" class="collapsed" aria-expanded="false">
+                <div class="licon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Forma_1_copy" data-name="Forma 1 copy" class="cls-1" d="M32.326,541.71l-1.187.2a6.427,6.427,0,0,1-.448,1.08l0.711,1a0.74,0.74,0,0,1-.061.989l-1.367,1.367a0.766,0.766,0,0,1-1,.05l-0.98-.7a6.354,6.354,0,0,1-1.079.448l-0.2,1.206a0.741,0.741,0,0,1-.742.656H24.033a0.745,0.745,0,0,1-.744-0.673l-0.2-1.189a6.335,6.335,0,0,1-1.08-.448l-1,.711a0.73,0.73,0,0,1-.46.159,0.741,0.741,0,0,1-.529-0.22l-1.367-1.367a0.746,0.746,0,0,1-.05-1l0.7-.98a6.432,6.432,0,0,1-.448-1.08l-1.206-.2A0.739,0.739,0,0,1,17,540.967v-1.934a0.747,0.747,0,0,1,.673-0.745l1.188-.2a6.392,6.392,0,0,1,.448-1.08l-0.71-1a0.739,0.739,0,0,1,.06-0.988l1.368-1.368a0.768,0.768,0,0,1,1-.051l0.982,0.7a6.343,6.343,0,0,1,1.08-.448l0.2-1.205A0.74,0.74,0,0,1,24.033,532h1.934a0.746,0.746,0,0,1,.744.672l0.2,1.189a6.368,6.368,0,0,1,1.079.448l1-.711a0.734,0.734,0,0,1,.459-0.158,0.744,0.744,0,0,1,.529.219l1.367,1.368a0.744,0.744,0,0,1,.051,1l-0.7.982a6.368,6.368,0,0,1,.448,1.08l1.206,0.2a0.74,0.74,0,0,1,.656.742v1.934A0.743,0.743,0,0,1,32.326,541.71ZM30,539.4a0.462,0.462,0,0,0-.41-0.464l-0.753-.126a4.011,4.011,0,0,0-.28-0.675l0.438-.613a0.466,0.466,0,0,0-.032-0.626l-0.855-.855a0.462,0.462,0,0,0-.331-0.137,0.455,0.455,0,0,0-.287.1l-0.622.444a4.083,4.083,0,0,0-.675-0.28l-0.124-.743A0.466,0.466,0,0,0,25.6,535H24.4a0.463,0.463,0,0,0-.464.41l-0.125.753a4.066,4.066,0,0,0-.675.28l-0.614-.438a0.48,0.48,0,0,0-.626.032l-0.855.855a0.461,0.461,0,0,0-.038.617l0.444,0.622a4.035,4.035,0,0,0-.28.675l-0.743.124A0.466,0.466,0,0,0,20,539.4V540.6a0.462,0.462,0,0,0,.41.464l0.753,0.125a4,4,0,0,0,.28.676l-0.438.612a0.466,0.466,0,0,0,.031.627l0.855,0.855a0.467,0.467,0,0,0,.618.038l0.622-.445a4.036,4.036,0,0,0,.675.281l0.124,0.742A0.466,0.466,0,0,0,24.4,545H25.6a0.463,0.463,0,0,0,.464-0.41l0.126-.754a3.961,3.961,0,0,0,.675-0.28l0.613,0.438a0.479,0.479,0,0,0,.627-0.032l0.854-.854A0.463,0.463,0,0,0,29,542.49l-0.444-.622a3.993,3.993,0,0,0,.28-0.675l0.742-.124A0.465,0.465,0,0,0,30,540.6V539.4Z" transform="translate(-17 -532)"></path>
+                    </svg>
+                </div>
+                <span>Administration</span>
+                <i class="fa fa-fw fa-caret-right pull-right"></i>
+            </a>
+            <ul id="controlPanel" class="collapse" aria-expanded="false">
+                <li><a href="https://logindev.mobilevoipconnect.com/ControlPanel/AccountControls"><span>Account</span></a></li>
+                <li><a href="https://logindev.mobilevoipconnect.com/ControlPanel/Settings"><span>Change Passcode</span></a></li>
+                                    <li><a href="https://logindev.mobilevoipconnect.com/ControlPanel/AdministrativeControls"><span>Administrative</span></a></li>
+                                    <li><a href="https://logindev.mobilevoipconnect.com/ControlPanel/CallerID"><span>Caller ID</span></a></li>
+                                    <li><a href="https://logindev.mobilevoipconnect.com/ControlPanel/Configure"><span>Configure</span></a></li>
+            </ul>
+        </li>
+            <li>
+                <a href="https://logindev.mobilevoipconnect.com/Pointers/ListPointers">
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 360.39 360.389" style="enable-background:new 0 0 360.39 360.389;" xml:space="preserve">
+                        <g>
+                        <path d="M301.123,173.306L118.995,3.265c-3.242-3.038-7.891-4.049-12.105-2.639c-4.211,1.404-7.317,5.006-8.086,9.389   L55.602,255.404c-0.854,4.847,1.306,9.717,5.464,12.341c4.152,2.625,9.49,2.465,13.491-0.378l59.968-42.699l47.219,127.448   c2.127,6.336,8.984,9.765,15.332,7.648l62.087-20.771c6.342-2.116,9.771-8.984,7.648-15.327l-47.228-127.43l73.596-1.975   c4.905-0.13,9.262-3.215,11.006-7.802C305.929,181.85,304.717,176.654,301.123,173.306z M202.591,172.455   c-3.842,0.109-7.4,2.004-9.599,5.163c-2.205,3.147-2.778,7.146-1.561,10.781l48.557,131.467l-39.111,13.075l-48.56-131.455   c-1.224-3.647-4.093-6.502-7.743-7.679c-3.656-1.188-7.643-0.585-10.772,1.649l-49.216,35.027l34.206-194.281l144.19,134.636   L202.591,172.455z" fill="#FFFFF"></path>
+
+
+
+                        </g>
+                                </svg>
+                    </div>
+                    <span>Pointers/DIDs</span>
+                </a>
+            </li>
+        <li>
+            <a href="https://logindev.mobilevoipconnect.com/Support" onclick="collapseLeftNavSection();">
+                <div class="licon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                        <path class="cls-1" d="M31.675,595a7,7,0,0,1-4.816,4.726,2.007,2.007,0,1,1-.31-1.977A5.013,5.013,0,0,0,29.578,595H29v-4h0.578a4.993,4.993,0,0,0-9.156,0H21v4H17v-4h1.325a6.955,6.955,0,0,1,13.35,0H33v4H31.675Z" transform="translate(-16 -585)"></path>
+                    </svg>
+                </div>
+                <span>Support</span>
+            </a>
+        </li>
+
+            <li>
+                <a href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#" id="lnkAddNewFolder" data-target="#swicthExtensionModal" data-toggle="modal" onclick="collapseLeftNavSection();">
+                    <div class="licon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                            <path id="Rectangle_23_copy" data-name="Rectangle 23 copy" class="cls-1" d="M32,618l-5,4v-3H19v-2h8v-3Zm-9,5h8v2H23v3l-5-4,5-4v3Z" transform="translate(-18 -614)"></path>
+                        </svg>
+                    </div>
+                    <span>Switch Extension</span>
+                </a>
+            </li>
+        <li>
+            <a href="https://logindev.mobilevoipconnect.com/Logout" onclick="collapseLeftNavSection();">
+                <div class="licon-box">
+                    
+                    <svg id="log_in_icon" class="header_icon" viewBox="10 0 135 135" xmlns="http://www.w3.org/2000/svg">
+                        <path id="path1" d="M 39.505192,111.30078 c -21.4583,-2.79124 -23.89267,-5.62556 -17.65467,-20.555208 5.05191,-12.09091 24.60982,-21.91257 31.64435,-15.89127 8.58597,7.34927 18.3949,7.0997 26.42544,-0.67236 5.29381,-5.12343 6.8403,-3.12538 3.00035,3.87642 -4.63016,8.44269 -4.63279,19.17593 -0.007,28.145378 3.18813,6.18166 -16.91934,8.54268 -43.40858,5.09704 z m 19.23103,-36.796438 c -3.92227,-2.42276 -6.08556,-4.92942 -7.91909,-9.17604 -0.82246,-1.90487 -2.41893,-4.8134 -3.54772,-6.4634 -3.38391,-4.94639 -4.35576,-9.99382 -2.64965,-13.76126 0.80667,-1.78131 1.63077,-6.22222 1.83132,-9.8687 1.40895,-25.6179098 37.81394,-23.37365 40.42447,2.49205 0.2852,2.82585 0.9959,6.1258 1.57933,7.33323 2.0526,4.24795 -1.59671,13.63061 -9.77578,25.13429 -4.23698,5.95921 -13.89402,8.04618 -19.94288,4.30983 z"></path>
+                        <path id="path2" d="M 100.596,117.28386 C 85.437922,111.45435 79.069222,92.988412 87.266572,78.635392 100.83776,54.873142 137.36852,64.439322 137.52514,91.796422 137.63626,111.20715 118.72801,124.25708 100.596,117.28386 Z m 19.74032,-8.09538 c 10.45724,-5.87729 13.21598,-22.797628 4.93837,-30.288768 -4.29393,-3.88595 -7.80157,0.40831 -4.13793,5.06588 4.88957,6.21607 2.72738,16.449868 -4.16671,19.721318 -12.86051,6.10272 -25.040138,-7.223638 -17.183378,-18.801218 4.823328,-7.10758 0.0206,-10.75821 -5.18116,-3.93831 -12.22103,16.0226 7.993958,38.209768 25.730808,28.241098 z m -7.13528,-20.757838 c 1.59283,-2.97623 1.30167,-16.32461 -0.40625,-18.62461 -3.03513,-4.08731 -5.02522,-0.73384 -5.34895,9.01342 -0.35021,10.54513 2.60982,15.48839 5.7552,9.61119 z"></path>
+                    </svg>
+                </div>
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+        <main id="page-main" class="nav-visible">
+            <!-- Top Navigation -->
+            <nav class="navbar cvm-header" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://logindev.mobilevoipconnect.com/">
+                        <img src="./7326054008-Connect Me Voice-call recording_files/CMV Minimal Logo.png" alt="7326054008-Connect Me Voice" id="mainLogo">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="navbar-header-second">
+                    <div class="nhs-text">
+    <p>Welcome 17326054008&nbsp;&nbsp;&nbsp;&nbsp; (732) 605-4008&nbsp;&nbsp; Ext. </p>
+</div>
+<ul class="nhs-list">
+    <li>September 11, 2019</li>
+    
+</ul>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="navbar-header-third">
+                    <div class="navbar-header third-burger">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="page-wrapper">
+
+                <div class="container-fluid main-wrapper">
+                    
+<div class="breadcrumb-box">
+    <ol class="breadcrumb cvm-breadcrumb">
+        <li class="breadcrumb-item"><a href="https://logindev.mobilevoipconnect.com/Mailbox">Mailbox</a></li><li class="breadcrumb-item active">Call Recordings</li>
+    </ol>
+</div>
+
+
+
+                    
+<!-- should handle inbox,saved,deleted and any other folder i think -->
+
+
+<form action="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings" method="post" novalidate="novalidate"><input class="selectedAction" id="ActionName" name="ActionName" type="hidden" value=""><input class="selectedIds" id="SelectedVoicemailIds" name="SelectedVoicemailIds" type="hidden" value=""><input data-val="true" data-val-required="The Search field is required." id="searchApplied" name="Search" type="hidden" value="False">    <a data-target="#alertModal" data-toggle="modal" class="alertThis" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#alertModal" data-heading="Alert Heading" data-alerttext="Alert Text" data-closetext="Close Text">Play/ View</a>
+    <div class="cvm-table-box mailbox-table-box" id="voicemails">
+        
+<div class="table-header">
+    <div class="mailbox-refresh" style="cursor:pointer" onclick="updateMailbox()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <metadata><!--?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?-->
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:description rdf:about=""></rdf:description>
+   </rdf:rdf>
+</x:xmpmeta><!--?xpacket end="w"?--></metadata>
+
+  <path d="M61.236,94.763A6,6,0,1,0,62.8,100.5H61.236a4.5,4.5,0,1,1-4.24-6,4.44,4.44,0,0,1,3.167,1.335L57.747,98.25H63V93Z" transform="translate(-51 -93)"></path>
+</svg>&nbsp; 
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="17.03" height="15.031" viewBox="0 0 17.03 15.031" class="search-icon" data-toggle="modal" data-target="#searchModal"><path class="cls-1" d="M1113.78,175.376a1.3,1.3,0,0,1-1.91.381l-5.64-4.274a1.532,1.532,0,0,1-.59-1.287,4.855,4.855,0,0,1-2.75,1.639,4.632,4.632,0,0,1-3.74-.881,5.52,5.52,0,0,1-2.07-3.513,5.833,5.833,0,0,1,.81-4.09,4.726,4.726,0,0,1,6.94-1.384,5.8,5.8,0,0,1,1.65,6.9,1.265,1.265,0,0,1,1.31.149l5.64,4.273A1.588,1.588,0,0,1,1113.78,175.376Zm-8.36-9.6a3.826,3.826,0,0,0-1.45-2.449,3.3,3.3,0,0,0-4.84.963,4.048,4.048,0,0,0,.88,5.3,3.3,3.3,0,0,0,4.84-.964A4.108,4.108,0,0,0,1105.42,165.778Z" transform="translate(-1097 -161)"></path></svg>
+    <h2>Call Recordings</h2>
+</div>
+
+<div class="table-header-second">
+    <input id="sortFilterName" name="SortingFilter.FieldName" type="hidden" value="">
+    <input data-val="true" data-val-required="The SortingOrder field is required." id="sortFilterOrder" name="SortingFilter.SortingOrder" type="hidden" value="None">
+    <ul class="ths-list">
+        <li>
+            <a data-target="#copyMoveModal" onclick="copyMoveMessages();" style="color:#34b0d4; cursor:pointer">Copy / Move</a>
+        </li>
+        <li>
+            <a class="forwardModalLink" data-target="#forwardModal" onclick="forwardMessages();" style="color:#34b0d4; cursor:pointer">Forward</a>
+        </li>
+        <li>
+            <a onclick="deleteMessages();" style="cursor:pointer; color:#34b0d4">Delete</a>
+        </li>
+        <li>
+            <a onclick="downloadMessages();" style="color:#34b0d4; cursor:pointer">Download</a>
+        </li>
+        <li>
+            <a onclick="resendMessages();" style="color:#34b0d4; cursor:pointer">Resend Notification</a>
+        </li>
+        <li>
+            <a onclick="markAsRead();" style="color:#34b0d4; cursor:pointer">Mark as Read</a> 
+        </li>
+        <li>
+            <a onclick="markAsUnread();" style="color:#34b0d4; cursor:pointer">Mark as Unread</a> 
+        </li>
+    </ul>
+</div>
+
+<table class="infinite-scroll table table-striped table-bordered cvm-table text-center mbox">
+    <thead>
+<tr>
+    <th>
+        <div class="text-center"></div>
+        <div class="checkbox-group text-center">
+            <input type="checkbox" name="select_row1" id="selectAll">
+            <label for="selectAll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" class="unchecked"><path class="cls-1" d="M290.444,272.556v10.888H279.555V272.556h10.889m0-1.556H279.555A1.56,1.56,0,0,0,278,272.556v10.888A1.56,1.56,0,0,0,279.555,285h10.889A1.56,1.56,0,0,0,292,283.444V272.556A1.56,1.56,0,0,0,290.444,271Z" transform="translate(-278 -271)"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" class="checked">
+  <metadata><!--?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?-->
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:description rdf:about=""></rdf:description>
+   </rdf:rdf>
+</x:xmpmeta><!--?xpacket end="w"?--></metadata>
+
+  <path class="cls-1" d="M290.444,236H279.555A1.555,1.555,0,0,0,278,237.555v10.889A1.555,1.555,0,0,0,279.555,250h10.889A1.555,1.555,0,0,0,292,248.444V237.555A1.555,1.555,0,0,0,290.444,236Zm-7,10.889L279.555,243l1.1-1.1,2.792,2.785,5.9-5.9,1.1,1.105Z" transform="translate(-278 -236)"></path>
+</svg>
+            </label>
+        </div>
+    </th>
+    <th>Urgent</th> 
+    <th>Play/ View</th>
+    <th>Download</th>
+    <th class="sortable" data-name="DisplayName">Name</th>
+    <th class="text-left sortable" data-name="From">Caller ID</th>
+    <th class="sortable" data-name="Ext">Extension</th>
+    <th class="text-left sortable" data-name="AdjustedDateTime">Received</th>
+    <th>Length</th>
+    <th class="sortable" data-name="CrType">Direction</th>
+    <th class="sortable" data-name="CrDialedDnis">Dialed</th>
+    <th class="text-center"><span class="hideable">Notes</span></th>
+    <th class="text-center"><span class="hideable">Call Back</span></th>
+    <th class="text-center">Forward</th>
+    <th class="text-center">Resend</th>
+    <th class="text-center">Delete</th>
+</tr>
+    </thead>
+    <tbody class="contextBody" id="mailboxItems">
+    </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="15">
+                    <span style="font-weight:bold">
+                        Click "Search" above to locate your recording(s).
+                    </span>
+                </td>
+            </tr>
+        </tfoot>
+</table>
+<div class="table-header-second">
+    <ul class="ths-list">
+        <li>
+            <a data-target="#copyMoveModal" onclick="copyMoveMessages();" style="color:#34b0d4; cursor:pointer">Copy / Move</a>
+        </li>
+        <li>
+            <a class="forwardModalLink" data-target="#forwardModal" onclick="forwardMessages();" style="color:#34b0d4; cursor:pointer">Forward</a>
+        </li>
+        <li>
+            <a onclick="deleteMessages();" style="cursor:pointer; color:#34b0d4">Delete</a>
+        </li>
+        <li>
+            <a onclick="downloadMessages();" style="color:#34b0d4; cursor:pointer">Download</a>
+        </li>
+        <li>
+            <a onclick="resendMessages();" style="color:#34b0d4; cursor:pointer">Resend Notification</a>
+        </li>
+        <li>
+            <a onclick="markAsRead();" style="color:#34b0d4; cursor:pointer">Mark as Read</a> 
+        </li>
+        <li>
+            <a onclick="markAsUnread();" style="color:#34b0d4; cursor:pointer">Mark as Unread</a> 
+        </li>
+    </ul>
+</div>
+
+<div class="table-header-second ths-black"></div>
+<div>
+    <span style="font-weight:700; font-size:small">
+        Note: Messages/Call Recordings are only saved for 60 days in the Inbox and Folders
+    </span>
+</div>
+
+<div class="pagination-control-box">
+    <div class="container-fluid">
+        <div class="row">
+            <input data-val="true" data-val-number="The field PageNo must be a number." data-val-required="The PageNo field is required." id="pageNo" name="PageNo" type="hidden" value="1">
+        </div>
+    </div>
+    <ul></ul>
+</div>
+<script>
+    function SetSort() {
+        if (0 == 0)
+        {
+            return;
+        }
+
+        $('.sortable').each(function () {
+
+            if ($(this).data('name') == '')
+            {
+                if (0 == 1)
+                {
+                    $(this).addClass('headerAscending');
+                }
+                else if (0 == 2)
+                {
+                    $(this).addClass('headerDescending');
+                }
+            }
+        })
+    }
+</script>
+    </div>
+    <input id="hdnSelectedMsgs" type="hidden">
+    <input type="hidden" data-heading="Mailbox" data-alerttext="" data-closetext="OK" class="msgBox" id="msgBox">
+    <input id="rowCount" type="hidden" data-target="#alertModal" data-toggle="modal" class="alertThis" href="#alertModal" data-heading="Mailbox" data-alerttext="No message is selected." data-closetext="OK">
+    <input id="deleteMsg" type="hidden" data-target="#confirmModal" data-toggle="modal" class="confirmThis" href="#confirmModal" data-heading="Mailbox" data-question="Delete Items?" data-actiontext="OK" data-actionurl="javascript:submitForm();" data-canceltext="Cancel">
+    <div>
+        <ul id="contextMenulist" class="dropdown-menu" role="menu" style="display:none">
+            <li><a tabindex="-1" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#">Mark as Read</a></li> 
+            <li><a tabindex="-1" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#">Mark as Unread</a></li> 
+            <li>
+        </li></ul>
+    </div>
+</form>
+
+                </div>
+                <!-- /.container-fluid -->
+                <footer class="cvm-footer-box">
+                    <div class="cvm-footer">
+                        
+                        <ul class="copyright-list">
+                            <li><a href="https://www.connectmevoice.com/support/">Privacy Policy</a></li>
+                            <li><a href="https://www.connectmevoice.com/">www.connectmevoice.com</a></li>
+                            <li>Copyright © 2019 Connect Me Voice</li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+            <!-- /#page-wrapper -->
+        </main>
+
+        <!-- Modals -->
+
+        
+        <div id="searchModal" class="modal fade in" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" onclick="cancelRefreshFilter()">×</button>
+                        <h4 class="modal-title">Search</h4>
+                    </div>
+                    <div class="modal-body">
+<form action="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings&amp;search=True" method="post" novalidate="novalidate">                            <div class="modalForm v4">
+                                <div class="container-fluid">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <input class="selectedAction" id="ActionName" name="ActionName" type="hidden" value="">
+                                            <input class="selectedIds" id="SelectedVoicemailIds" name="SelectedVoicemailIds" type="hidden" value="">
+                                            <input id="HeaderText" name="HeaderText" type="hidden" value="Call Recordings">
+
+                                            <div>
+                                                <span class="error-message text-danger" data-text="You must enter at least one search criteria."></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="startDate">Start</label>
+                                                <input class="form-control" data-val="true" data-val-date="The field SearchStartDate must be a date." id="startDate" name="SearchStartDate" type="text" value="">
+                                                <div class="field-desc">
+                                                    <span class="date-range-error text-danger" data-text="Start Date must be less than or equal to End Date." data-days-limit-text="Time span cannot be greater than 14 days."></span>
+                                                    <span class="start-date-range-error text-danger" data-text="Start date cannot be blank."></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="SearchEndDate">End</label>
+                                                <input class="form-control" data-val="true" data-val-date="The field SearchEndDate must be a date." id="endDate" name="SearchEndDate" type="text" value="">
+                                                <div class="field-desc">
+                                                    <span class="end-date-range-error text-danger" data-text="End date cannot be blank."></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="SearchExtension">Ext. / Call Center Agent</label>
+                                                <input class="form-control" id="callCenterAgent" name="SearchExtension" type="text" value="">
+                                                <div class="field-desc">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="SearchCallerIdNumber">Caller ID Number</label>
+                                                <input class="form-control hasKeyLocking" data-keylocking="numeric" id="callerIdNo" name="SearchCallerIdNumber" type="text" value="">
+                                                <div class="field-desc">
+                                                    Rules: No spaces or special characters e.g. 7325551234
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="SearchCallerIdName">Caller ID Name</label>
+                                                <input class="form-control" id="callerIdName" name="SearchCallerIdName" type="text" value="">
+                                                <div class="field-desc">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="SearchSelectedDirection">Direction <span>(Call Recording Only)</span></label>
+                                                <select class="form-control" id="direction" name="SearchSelectedDirection"><option value="">All</option>
+<option value="inbound">Inbound</option>
+<option value="outbound">Outbound</option>
+</select>
+                                                <div class="field-desc">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="SearchDialedNumber">Dialed Number <span>(Call Recording Only)</span></label>
+                                                <input class="form-control hasKeyLocking" data-keylocking="numeric" id="dialledNo" name="SearchDialedNumber" type="text" value="">
+                                                <div class="field-desc">
+                                                    Rules: No spaces or special characters e.g. 7325551234
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="searchButton"></label>
+                                                <div class="buttons-control">
+                                                    <button type="submit" name="actionName" value="search" onclick="searchValidate(event);" class="btn btn-dark-grey">Search</button>
+                                                    <button type="reset" class="btn btn-dark-grey" data-dismiss="modal" onclick="cancelRefreshFilter()">Cancel</button>
+                                                </div>
+                                                <div class="field-desc">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="copyMoveModal" class="baseModal modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Copy / Move</h4>
+                    </div>
+                    <div class="modal-body">
+<form action="https://logindev.mobilevoipconnect.com/Mailbox/CopyMoveMessages" method="post" novalidate="novalidate">                            <div class="modalForm v4">
+                                <div class="container-fluid">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="modalForm">
+                                                <input class="selectedAction" id="ActionName" name="ActionName" type="hidden" value="">
+                                                <input class="selectedIds" id="SelectedVoicemailIds" name="SelectedVoicemailIds" type="hidden" value="">
+                                                <input id="HeaderText" name="HeaderText" type="hidden" value="Call Recordings">
+                                                <input data-val="true" data-val-required="The Search field is required." id="Search" name="Search" type="hidden" value="False">
+
+                                                <div class="form-group">
+                                                    <label for="MoveMessageTo">Move Message To: </label>
+                                                    <select class="form-control" id="folderList" name="DestinationFolder"><option value="Inbox">Inbox</option>
+<option value="Saved">Saved</option>
+<option value="Call Recordings">Call Recordings</option>
+</select>
+
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="LeaveCopyOfMessage">Leave Copy Of Message </label>
+                                                    <input data-val="true" data-val-required="The IsCopy field is required." id="copyMessage" name="IsCopy" type="checkbox" value="true"><input name="IsCopy" type="hidden" value="false">
+                                                    <div class="field-desc">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="startDate"></label>
+                                                    <div class="buttons-control">
+                                                        <button type="submit" name="actionName" value="copymove" class="btn btn-dark-grey">Save</button>
+                                                        <button type="button" class="btn btn-dark-grey" data-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                    <div class="field-desc">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="forwardModal" class="baseModal modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Forward</h4>
+                    </div>
+                    <div class="modal-body">
+<form action="https://logindev.mobilevoipconnect.com/Mailbox/ForwardMessages/forwardMessage" method="post" novalidate="novalidate">                            <div class="modalForm v4">
+                                <div class="container-fluid">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <input class="selectedAction" id="ActionName" name="ActionName" type="hidden" value="">
+                                            <input class="selectedIds" id="SelectedVoicemailIds" name="SelectedVoicemailIds" type="hidden" value="">
+                                            <input id="HeaderText" name="HeaderText" type="hidden" value="Call Recordings">
+                                            <input id="hdnDestPhone" name="DestinationPhoneNumber" type="hidden" value="17326054008">
+
+                                            <div class="form-group">
+                                                <label for="ForwardDestinationType">Destination</label>
+                                                <input id="List" data-val="true" data-val-number="The field ForwardDestinationType must be a number." name="ForwardDestinationType" type="radio" value="0"><label for="Destination">Distribution List</label>
+                                                <input id="Phone" checked="checked" name="ForwardDestinationType" type="radio" value="1"><label for="Destination">Phone Number Extension</label>
+                                            </div>
+                                            <div class="form-group" id="ListControls">
+                                                <label for="DestinationDistributionListId">Distribution List</label>
+
+                                                <select class="form-control" data-val="true" data-val-number="The field DestinationDistributionListId must be a number." id="DestinationDistributionListId" name="DestinationDistributionListId"><option value="21216">Empty</option>
+<option value="21217">Empty</option>
+<option value="21218">Empty</option>
+<option value="21219">Empty</option>
+<option value="21220">Empty</option>
+<option value="21221">Empty</option>
+<option value="21222">Empty</option>
+<option value="21223">Empty</option>
+<option value="21224">Empty</option>
+<option value="21225">Empty</option>
+<option value="21226">Empty</option>
+<option value="21227">Empty</option>
+<option value="21228">Empty</option>
+<option value="21229">Empty</option>
+<option value="21230">Empty</option>
+<option value="21231">Empty</option>
+<option value="21232">Empty</option>
+<option value="21233">Empty</option>
+<option value="21234">Empty</option>
+<option value="21235">Empty</option>
+</select>
+                                                <div class="field-desc"></div>
+                                            </div>
+                                            <div id="PhoneControls">
+                                                <div class="form-group">
+                                                    <label for="DestinationPhoneNumber">Phone Number</label>
+                                                    <input class="form-control hasKeyLocking" data-keylocking="numeric" id="forwardPhoneNumber" name="DestinationPhoneNumber" type="text" value="17326054008">
+                                                    <div class="field-desc">
+                                                        Rules: No spaces or special characters e.g. 7325551234
+                                                        <span class="phone-number-error text-danger"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="DestinationExtension">Extension</label>
+                                                    <input class="form-control hasKeyLocking" data-keylocking="numeric" id="forwardExtension" name="DestinationExtension" type="text" value="">
+                                                    <div class="field-desc">
+                                                        <span class="extension-error text-danger"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="startDate"></label>
+                                                <div class="buttons-control">
+                                                    <button type="submit" onclick="validateFowarding(this, event);" name="actionName" value="forward" class="btn btn-dark-grey">Save</button>
+                                                    <button type="button" class="btn btn-dark-grey" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                                <div class="field-desc">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="renameVoicemail" class="modal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 class="modal-title">Rename Message</h1> 
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://logindev.mobilevoipconnect.com/Mailbox/UpdateMessageName" method="post" novalidate="novalidate">    <div class="modalForm v4">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="control-group">
+                        <div class="form-group">
+                            <input class="form-control" data-val="true" data-val-number="The field PageNo must be a number." data-val-required="The PageNo field is required." id="pageNo" name="PageNo" type="hidden" value="0">
+                            <input class="form-control" data-val="true" data-val-number="The field MessageId must be a number." data-val-required="The MessageId field is required." id="messageId" name="MessageId" type="hidden" value="0">
+                            <input class="form-control" id="folderName" name="Folder" type="hidden" value="">
+                            <label for="">Name</label>
+                            <input class="form-control" data-val="true" data-val-required="The Name field is required." id="voicemailName" name="Name" type="text" value="">
+                            <div class="field-desc">
+                                <span class="voicemailName-error text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <div class="buttons-control">
+                                <button id="btnSave" onclick="validateRenamingMessage(this, event);" class="btn btn-dark-grey">Save</button>
+                                <button type="button" class="btn btn-dark-grey" data-dismiss="modal">Cancel</button>
+                                <div class="field-desc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="playVoiceMail" class="modal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                Modal content
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 class="modal-title">Play</h1> 
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group" id="divAudio_Player">
+                            <audio controls="" autoplay="" id="audioPlayer" size="200px">
+                                
+                            </audio>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="startDate"></label>
+                            <div class="buttons-control">
+                                <button type="button" class="btn btn-dark-grey" data-dismiss="modal">Close</button>
+                            </div>
+                            <div class="field-desc">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialogHolder"></div>
+    
+
+        <div id="confirmModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 id="confirmHeading" class="modal-title"></h1>
+                    </div>
+                    <div class="modal-body">
+                        <p id="confirmQuestion"></p>
+                        <p id="confirmButtons">
+                            <a id="confirmActionLink" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#" class="btn btn-secondary confirm-action-link">OK</a>
+                            <a id="confirmCancelLink" href="https://logindev.mobilevoipconnect.com/Mailbox/GetVoicemails?folderName=Call%20Recordings#" class="btn btn-secondary confirm-cancel-link" data-dismiss="modal">Cancel</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alertModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        
+                        <h1 id="alertHeading" class="modal-title"></h1>
+                    </div>
+                    <div class="modal-body">
+                        <h3 id="alertText"></h3>
+                    </div>
+                    <div class="modal-footer">
+                        <p id="alertButtons">
+                            <a id="alertMessageOKLink" href="javascript:CloseAlert();" class="btn btn-secondary ">OK</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="messageBox" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        
+                        <h1 id="alertMessageHeading" class="modal-title">Mailbox</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h3 id="alertMessageText"></h3>
+                    </div>
+                    <div class="modal-footer">
+                        <p id="alertMessageButtons">
+                            <a id="alertMessageOKLink" href="javascript:closeMsgBox();" class="btn btn-secondary ">OK</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="newFolderModal" class="modal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 class="modal-title">Add New Folder</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://logindev.mobilevoipconnect.com/Mailbox/SaveFolder" method="post" novalidate="novalidate">    <div class="modalForm v4">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="control-group">
+                        <div class="form-group">
+                            <input class="form-control" id="oldFolderName" name="OldFolderName" type="hidden" value="">
+                            <label for="">Folder Name</label> 
+                            <input class="form-control" data-val="true" data-val-required="Please provide folder name." id="folderName" name="FolderName" type="text" value="">
+                            <div class="field-desc"><span class="field-validation-valid" data-valmsg-for="FolderName" data-valmsg-replace="true"></span></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""></label>
+                            <button id="btnSave" class="btn btn-dark-grey">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="renameFolder" class="modal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 class="modal-title">Rename Folder</h1> 
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://logindev.mobilevoipconnect.com/Mailbox/SaveFolder" method="post" novalidate="novalidate">    <div class="modalForm v4">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="control-group">
+                        <div class="form-group">
+                            <input class="form-control" id="oldFolderName" name="OldFolderName" type="hidden" value="Call Recordings">
+                            <label for="">Folder Name</label> 
+                            <input class="form-control" data-val="true" data-val-required="Please provide folder name." id="folderName" name="FolderName" type="text" value="Call Recordings">
+                            <div class="field-desc"><span class="field-validation-valid" data-valmsg-for="FolderName" data-valmsg-replace="true"></span></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""></label>
+                            <button id="btnSave" class="btn btn-dark-grey">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="swicthExtensionModal" class="modal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h1 class="modal-title">Switch Extension</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalForm v5">
+    <div class="container-fluid mt-15">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="control-group">
+
+<form action="https://logindev.mobilevoipconnect.com/SwitchExtension/SwitchAccount" id="frmSwitchAccount" method="post" novalidate="novalidate">                        <div class="form-group">
+                            <label for="startDate">Switch Extension</label>
+                            <div class="right-col">
+                                <input data-val="true" data-val-required="Select extension to switch." id="hdnExtenstion" name="Extension" type="hidden" value="">
+                                <span class="k-widget k-combobox k-header k-combobox-clearable" style="width: 50%; min-width: 180px;"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-default"><input class="k-input" type="text" autocomplete="off" title="" role="combobox" aria-expanded="false" style="width: 100%; min-width: 180px;" tabindex="0" aria-disabled="false" aria-autocomplete="list" aria-owns="ddlSwitchExtension_listbox" aria-busy="false" aria-activedescendant="a9ffc6e4-d222-412a-870a-75da5996ddbb"><span unselectable="on" class="k-icon k-clear-value k-i-close k-hidden" title="clear" role="button" tabindex="-1"></span><span unselectable="on" class="k-select" aria-label="select" role="button" tabindex="-1" aria-controls="ddlSwitchExtension_listbox"><span class="k-icon k-i-arrow-60-down"></span></span></span><input id="ddlSwitchExtension" style="width: 50%; min-width: 180px; display: none;" data-role="combobox" aria-disabled="false"></span>
+                                <div class="field-desc">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="Extension" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                var extentionData = [{"Id":"ATP0000000000","Extention":"0","FullName":" ","ExtensionWithFullName":"0  ","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000001000","Extention":"1","FullName":"Ring Group","ExtensionWithFullName":"1 Ring Group","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000002000","Extention":"2","FullName":"Call Center","ExtensionWithFullName":"2 Call Center","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000009000","Extention":"9","FullName":" ","ExtensionWithFullName":"9  ","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000700000","Extention":"700","FullName":"Joe Blow","ExtensionWithFullName":"700 Joe Blow","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000701000","Extention":"701","FullName":"Ext 701","ExtensionWithFullName":"701 Ext 701","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000704000","Extention":"704","FullName":"Ext 704","ExtensionWithFullName":"704 Ext 704","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000705000","Extention":"705","FullName":"Ext 705","ExtensionWithFullName":"705 Ext 705","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000710000","Extention":"710","FullName":"Chetu Test","ExtensionWithFullName":"710 Chetu Test","CompanyName":"ha1test (salesforce)"},{"Id":"ATP0000750000","Extention":"750","FullName":"Colm Test","ExtensionWithFullName":"750 Colm Test","CompanyName":"ha1test (salesforce)"}];
+                                $("#frmSwitchAccount").data("validator").settings.ignore = "";
+
+                                $(ddlSwitchExtension).kendoComboBox({
+                                    dataTextField: 'ExtensionWithFullName',
+                                    dataValueField: 'Id',
+                                    autoWidth: true,
+                                    headerTemplate: "<table><tr><td width='150px'><b>Extension</b></td><td><b>Name</b></td></tr></table>",
+                                    template: "<table><tr><td width='150px'>${ Extention }</td><td>${ FullName }</td></tr></table>",
+                                    dataSource: { data: extentionData },
+                                    value: $('#hdnExtenstion').val(),
+                                    filter: "contains",
+                                    change: function (e) {
+                                        $('#hdnExtenstion').attr('value', $(ddlSwitchExtension).val());
+                                    }
+                                });
+
+                                $(ddlSwitchExtension).data("kendoComboBox").list.css({ 'width' : '50%', 'min-width': '240px', 'max-width' : '500px' });
+                            });
+                        </script>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="form-group mt-20">
+                                    <label for="startDate"></label>
+                                    <div class="buttons-control-custom">
+                                        <button type="submit" class="btn btn-dark-grey">Go</button>
+                                    </div>
+                                    <div class="field-desc">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+</form>                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Modal -->
+    </div>
+    <!-- /#wrapper -->
+
+    <div style="display:none;width:1000px;height:10px;background-color:orange;"></div>
+    
+        <script src="./7326054008-Connect Me Voice-call recording_files/jquery.tablesorter.min.js.download"></script>
+        <script>
+            var actionName =  null;
+            var folderName =  "Call Recordings";
+            var separator = ",";
+            var $selectionControl = $('#hdnSelectedMsgs');
+            var totalItemCount = 0;
+            var selectedItemCount = 0;
+            var moreRowsUrl = "/Mailbox/" + actionName + "?folderName=" + folderName; //the URL to your ActionMethod
+            var intervalId = 0;
+
+            $(window).scroll(scrollHandler);
+
+            function goToPageNo(folderName) {
+                var pageNos = $("#txtGoToPageNo").val();
+                if (pageNos <= 1) {
+                    $("#lblValidPageNo").html("");
+                    movetoPage(pageNos, folderName);
+                }
+                else {
+                    $("#lblValidPageNo").html("Out of range value. Please enter values <= " +1);
+                    $("#txtGoToPageNo").val(1);
+                    //Model.PageNo
+                }
+
+            }
+
+            function movetoPage(pageNo, folderName) {
+                if (pageNo > 1 || pageNo < 1)
+                {
+                    return
+                }
+
+                var sortObject = {};
+
+                sortObject.FieldName = $('#sortFilterName').val();
+                sortObject.SortingOrder = $('#sortFilterOrder').val();
+
+                selectedItemCount = 0;
+                var modelToPost = {};
+                modelToPost.PageNo = pageNo;
+                modelToPost.FolderName = folderName;
+                modelToPost.SearchStartDate = $('#startDate').val();
+                modelToPost.SearchEndDate = $('#endDate').val();
+                modelToPost.SearchExtension = $('#callCenterAgent').val();
+                modelToPost.SearchCallerIdNumber = $('#callerIdNo').val();
+                modelToPost.SearchCallerIdName = $('#callerIdName').val();
+                modelToPost.SearchSelectedDirection = $('#direction').val();
+                modelToPost.SearchDialedNumber = $('#dialledNo').val();
+                modelToPost.SearchDialedNumber = $('#dialledNo').val();
+                modelToPost.SortingFilter = sortObject;
+                modelToPost.Search = $('#searchApplied').val();
+
+                $.ajax({
+                    url: '../Mailbox/GetVoicemailPage',
+                    data: modelToPost,
+                    datatype: "application/json",
+                    type: 'POST',
+                    success: function (res) {
+                        if (res == '') {
+                            window.location.href = '/Login';
+                            return;
+                        }
+                        else {
+                            $('#voicemails').html(res);
+                            SetSort();
+                            applySorting();
+                            bindEvents();
+                            $selectionControl.val('');
+
+                        }
+                    }
+
+                });
+            }
+
+            function updateMailbox() {
+                var sortObject = {};
+                var modelToPost = {};
+
+                sortObject.FieldName = $('#sortFilterName').val();
+                sortObject.SortingOrder = $('#sortFilterOrder').val();
+                modelToPost.PageNo = $('#pageNo').val();;
+                modelToPost.FolderName = 'Call Recordings';
+                modelToPost.SearchStartDate = $('#startDate').val();
+                modelToPost.SearchEndDate = $('#endDate').val();
+                modelToPost.SearchExtension = $('#callCenterAgent').val();
+                modelToPost.SearchCallerIdNumber = $('#callerIdNo').val();
+                modelToPost.SearchCallerIdName = $('#callerIdName').val();
+                modelToPost.SearchSelectedDirection = $('#direction').val();
+                modelToPost.SearchDialedNumber = $('#dialledNo').val();
+                modelToPost.SortingFilter = sortObject;
+                modelToPost.Search = $('#searchApplied').val();
+
+                $.ajax({
+                    url: '../Mailbox/GetVoicemailPage',
+                    data: modelToPost,
+                    datatype: "application/json",
+                    type: 'POST',
+                    success: function (res) {
+                        if (res == '') {
+                            window.location.href = '/Login';
+                            return;
+                        }
+                        else {
+                            $('#voicemails').html(res);
+                            SetSort();
+                            applySorting();
+                            bindEvents();
+                            loadSelectedItems();
+                        }
+                    }
+                });
+            }
+
+
+            function validateFowarding(obj, event) {
+
+                var $phoneOption = $('#Phone');
+
+                if ($phoneOption.prop('checked') == true) {
+                    var $phoneNumberError = $('.phone-number-error');
+                    var $extensionError = $('.extension-error');
+                    var $phoneNumber = $('#forwardPhoneNumber');
+                    var $extension = $('#forwardExtension');
+                    var phoneNumber = $phoneNumber.val();
+                    var extension = $extension.val();
+                    var isValid = true;
+
+
+                    if (phoneNumber == null || phoneNumber == '') {
+                        $phoneNumberError.html('Please provide phone number.');
+                        isValid = false;
+                    }
+                    else {
+                        $phoneNumberError.html('');
+                    }
+
+                    if (extension == null || extension == '') {
+                        $extensionError.html('Please provide extension.');
+                        isValid = false;
+                    }
+                    else {
+                        $extensionError.html('');
+                    }
+
+                    if (!isValid) {
+                        event.preventDefault();
+                        return false;
+                    }
+                }
+
+                $('<input>').attr({ type: 'hidden', name: 'SearchCallerIdName', value: '' }).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'SearchCallerIdNumber', value: ''}).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'SearchDialedNumber', value: ''}).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'SearchSelectedDirection', value: ''}).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'SearchEndDate', value: ''}).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'SearchExtension', value: ''}).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'SearchStartDate', value: ''}).appendTo('form#forwardMessage');
+                $('<input>').attr({ type: 'hidden', name: 'PageNo', value: 1}).appendTo('form#forwardMessage');
+            }
+
+            function validateRenamingMessage(obj, event) {
+
+                var $voiceMailName = $('#voicemailName');
+                var $voicemailNameError = $('.voicemailName-error');
+                var name = $voiceMailName.val();
+                var isValid = true;
+
+                if (name == null || name == '') {
+                    $voicemailNameError.html('Please provide name.');
+                    isValid = false;
+                }
+                else {
+                    $voicemailNameError.html('');
+                }
+
+                if (!isValid) {
+                    event.preventDefault();
+                    return false;
+                }
+            }
+
+            function updateSelectedIds(msgId) {
+                var msgIdList = $('.checkboxRow:checked').map(function () { return this.value; }).get().join(',');
+                // If we clicked Forward on a single row, set the list to that row
+                if (msgId) {
+                    msgIdList = msgId;
+                }
+                $(".selectedIds").val(msgIdList);
+            }
+
+            function transcript(msgId) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Mailbox/Transcription",
+                    data: '{msgId: "' + msgId + '" }',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "html",
+                    success: function (response) {
+                        if (response == '') {
+                            window.location.href = '/Login';
+                            return;
+                        }
+
+                        $('.dialogHolder').html(response);
+                        $('#messageBox').modal('toggle');
+                    },
+                    failure: function (response) {
+                       //alert(response.responseText);
+                    },
+                    error: function (response) {
+                        //alert(response.responseText);
+                    }
+                });
+            }
+
+            function copyMoveMessages(msgId) {
+                updateSelectedIds(msgId);
+                $(".selectedAction").val("copymove");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    $("#copyMoveModal").modal("show");
+                }
+            }
+
+            function deleteMessages(msgId) {
+                updateSelectedIds(msgId);
+                $(".selectedAction").val("delete");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    $('#deleteMsg').trigger('click');
+                }
+            }
+
+            function downloadMessages(msgId) {
+                updateSelectedIds(msgId);
+                $(".selectedAction").val("download");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    submitForm();
+                }
+            }
+
+            function markAsRead(msgId) {
+                updateSelectedIds(msgId);
+                $(".selectedAction").val("read");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    submitForm();
+                }
+            }
+
+            function markAsUnread(msgId) {
+                updateSelectedIds(msgId);
+
+                $(".selectedAction").val("unread");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    submitForm();
+                }
+            }
+
+            function submitForm() {
+                document.forms[0].submit();
+            }
+
+            function resendMessages(msgId) {
+                updateSelectedIds(msgId);
+                $(".selectedAction").val("resend");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    submitForm();
+                }
+            }
+
+            function searchValidate(event) {
+                var $errorMsg = $('.date-range-error');
+                var $validMsg = $('.error-message');
+                var $startDateError = $('.start-date-range-error');
+                var $endDateError = $('.end-date-range-error');
+                var $startDate = $('#startDate');
+                var $endDate = $('#endDate');
+                var startDate = $startDate.val();
+                var endDate = $endDate.val();
+                var isValidDate = true;
+                var isValid = true;
+                var From = Date.parse(startDate);
+                var To = Date.parse(endDate);
+                var callCenterAgent = $('#callCenterAgent').val();
+                var callerIdNo = $('#callerIdNo').val();
+                var callerIdName = $('#callerIdName').val();
+                var direction = $('#direction').val();
+                var dialledNo = $('#dialledNo').val();
+
+                if (startDate == "" && endDate == "" && callCenterAgent == "" && callerIdNo == "" && callerIdName == "" && direction == "" && dialledNo == "") {
+                    $validMsg.html('You must enter at least one search criteria.');
+                    isValid = false;
+                }
+                else {
+                    $validMsg.html('');
+                }
+
+                if (!isValid) {
+                    event.preventDefault();
+                    return false;
+                }
+
+                if (kendo.parseDate(startDate) != null && kendo.parseDate(endDate) == null) {
+                    $endDateError.html($endDateError.data("text"));
+                    isValidDate = false;
+                }
+                else {
+                    $endDateError.html('');
+                }
+
+                if (kendo.parseDate(endDate) != null && kendo.parseDate(startDate) == null) {
+                    $startDateError.html($startDateError.data('text'));
+                    isValidDate = false;
+                }
+                else {
+                    $startDateError.html('');
+                }
+
+                if (!isValidDate) {
+                    event.preventDefault();
+                    return false;
+                }
+
+                if (From > To) {
+                    $errorMsg.html($errorMsg.data('text'));
+                    event.preventDefault();
+                    return false;
+                }
+                else {
+                    $errorMsg.html('');
+
+                    var days = (new Date(endDate) - new Date(startDate)) / (1000 * 60 * 60 * 24);
+
+                    if (days > 14)
+                    {
+                        $errorMsg.html($errorMsg.data('days-limit-text'));
+                        event.preventDefault();
+                        return false;
+                    }
+                }
+            }
+
+            function rowSelected() {
+                if ($(".selectedIds").val() == '') {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+
+            }
+
+            function forwardMessages(msgId) {
+                updateSelectedIds(msgId);
+                $(".selectedAction").val("forward");
+
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+                    $("#forwardModal").modal("show");
+                }
+            }
+
+            function renameMessage(msgId, name, folder, pageNo) {
+                updateSelectedIds(msgId);
+                if (rowSelected() == false) {
+                    $('#rowCount').trigger('click');
+                }
+                else {
+
+                    $('#renameVoicemail').find('#messageId').val(msgId);
+                    $('#renameVoicemail').find('#folderName').val(folder);
+                    $('#renameVoicemail').find('#voicemailName').val(name);
+                    $('#renameVoicemail').find('#voicemailName').val(name);
+                    $('#renameVoicemail').find('#pageNo').val(pageNo);
+                    $("#renameVoicemail").modal("show");
+                }
+            }
+
+            function playAndUpdate() {
+                $('.play').click(function () {
+                    var $row = $(this).parent('td').parent('tr');
+
+                    $row.removeClass('txt-semibold');
+                    $row.addClass('icon-black');
+
+                    if ($(this).attr('data-isNew') == 'True') {
+                        var msgId = $(this).attr('data-id');
+
+                        $.ajax({
+                            type: "POST",
+                            url: "/Mailbox/UpdateMessageStatus",
+                            data: '{msgId: "' + msgId + '" }',
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "html",
+                            success: function (response) {
+                                if (response == '') {
+                                    window.location.href = '/Login';
+                                    return;
+                                }
+                            },
+                        });
+                    }
+
+                    return false;
+                });
+            }
+
+            function cancelRefreshFilter() {
+
+                //intervalId = setInterval(updateMailbox, 30000);
+            }
+
+            function setSelectedValue(value) {
+                var selectedValue = $selectionControl.val();
+
+                if (selectedValue != undefined && selectedValue.length != 0) {
+                    var selectedValueList = selectedValue.split(separator);
+                    selectedValueList.push(value);
+                    $selectionControl.val(selectedValueList.join(separator));
+                }
+                else {
+                    $selectionControl.val(value);
+                }
+
+                selectedItemCount++;
+
+                if (selectedItemCount == totalItemCount) {
+                    $("#selectAll").prop('checked', true);
+                }
+            }
+
+            function removeSelectedValue(value) {
+                var selectedValue = $selectionControl.val();
+
+                if (selectedValue != undefined && selectedValue.length != 0) {
+                    var selectedValueList = selectedValue.split(separator);
+
+                    for (var i = 0; i < selectedValueList.length; i++) {
+                        if (selectedValueList[i] == value) {
+                            selectedValueList.splice(i, 1);
+                            $selectionControl.val(selectedValueList.join(separator));
+                            selectedItemCount--;
+
+                            if (selectedItemCount != totalItemCount) {
+                                $("#selectAll").prop('checked', false);
+                            }
+
+                            return;
+                        }
+                    }
+                }
+            }
+
+            function selectAllItems() {
+                var selectedValueList = $('.checkboxRow:checked').map(function () { return this.value; }).get().join(',');
+                $selectionControl.val(selectedValueList);
+                selectedItemCount = totalItemCount;
+            }
+
+            function unselectAllItems() {
+                $selectionControl.val('');
+                $('.checkboxRow').prop("checked", false);
+                selectedItemCount = 0;
+            }
+
+            function loadSelectedItems() {
+                var selectedValue = $selectionControl.val();
+                selectedItemCount = 0;
+
+                if (selectedValue != undefined && selectedValue.length != 0) {
+                    var selectedValueList = selectedValue.split(",");
+
+                    selectedValueList.forEach(function (item) {
+                        $('.checkboxRow').each(function () {
+                            var value = $(this).val();
+
+                            if (value == item) {
+                                $(this).prop("checked", true);
+                                selectedItemCount++;
+                            }
+                        });
+                    });
+
+
+                    if (totalItemCount != 0) {
+                        if (selectedItemCount == totalItemCount) {
+                            $("#selectAll").prop('checked', true);
+                        }
+                        else {
+                            $("#selectAll").prop('checked', false);
+                        }
+                    }
+                }
+            }
+
+            function bindEvents()
+            {
+                $checkboxRows = $(".checkboxRow");
+                totalItemCount = $checkboxRows.length;
+
+                $checkboxRows.click(function () {
+                    $this = $(this);
+                    value = $this.val();
+
+                    if ($this.is(":checked")) {
+                        setSelectedValue(value);
+                    } else {
+                        removeSelectedValue(value);
+                    }
+                });
+
+                if (totalItemCount != 0) {
+                    if (selectedItemCount == totalItemCount) {
+                        $("#selectAll").prop('checked', true);
+                    }
+                    else {
+                        $("#selectAll").prop('checked', false);
+                    }
+                }
+
+                $("#selectAll").click(function () {
+
+                    if ($(this).is(':checked')) {
+                        $('.checkboxRow').prop('checked', true);
+                        selectAllItems();
+                    }
+                    else {
+                        $('.checkboxRow').prop('checked', false);
+                        unselectAllItems();
+                    }
+                });
+            }
+
+            function updateTableSorter()
+            {
+                $("table#sortable1").trigger("update");
+            }
+
+            function applySorting(columns) {
+                $('.sortable').click(function () {
+
+                    var order = 0
+
+                    if (!$(this).hasClass('headerAscending') && !$(this).hasClass('headerDescending')) {
+                        //Apply Asc class
+                        order = 1;
+                    }
+                    else if ($(this).hasClass('headerAscending') ) {
+                        // apply Desc
+                        order = 2;
+                    }
+                    else if ($(this).hasClass('headerDescending')) {
+                        order = 0;
+                    }
+
+                    var sortObject = {};
+
+                    sortObject.FieldName = $(this).data('name');
+                    sortObject.SortingOrder = order;
+
+
+                    var modelToPost = {};
+                    modelToPost.PageNo = $('#pageNo').val();
+                    modelToPost.FolderName = 'Call Recordings';
+                    modelToPost.SearchStartDate = $('#startDate').val();
+                    modelToPost.SearchEndDate = $('#endDate').val();
+                    modelToPost.SearchExtension = $('#callCenterAgent').val();
+                    modelToPost.SearchCallerIdNumber = $('#callerIdNo').val();
+                    modelToPost.SearchCallerIdName = $('#callerIdName').val();
+                    modelToPost.SearchSelectedDirection = $('#direction').val();
+                    modelToPost.SearchDialedNumber = $('#dialledNo').val();
+                    modelToPost.SortingFilter = sortObject;
+                    modelToPost.Search = $('#searchApplied').val();
+
+                    $.ajax({
+                        url: '../Mailbox/GetVoicemailPage',
+                        data: modelToPost,
+                        datatype: "application/json",
+                        type: 'POST',
+                        success: function (res) {
+                            if (res == '') {
+                                window.location.href = '/Login';
+                                return;
+                            }
+                            else {
+                                $('#voicemails').html(res);
+                                SetSort();
+                                applySorting();
+                                bindEvents();
+                                loadSelectedItems();
+                            }
+                        }
+
+                    });
+                })
+            }
+
+            $(document).ready(function () {
+                var $errorMsg = $('.date-range-error');
+                var $startDateError = $('.start-date-range-error');
+                var $endDateError = $('.end-date-range-error');
+                var folder = "Call Recordings";
+
+                bindEvents();
+                applySorting();
+
+                $('.selectpicker').selectpicker({
+                    style: 'btn-info',
+                    size: 4
+                });
+
+                $('#startDate').on('input change', function (e) {
+                    $errorMsg.html('');
+                    $startDateError.html('');
+                });
+
+                $('#endDate').on('input change', function (e) {
+                    $errorMsg.html('');
+                    $endDateError.html('');
+                });
+
+                $('#forwardModal').on('shown.bs.modal', function () {
+                    $('#Phone').attr("checked", true);
+                    $('#forwardPhoneNumber').val($('#hdnDestPhone').val());
+                    $('#forwardextension').val('');
+                    $('.phone-number-error').html('');
+                    $('.extension-error').html('');
+                    $('#PhoneControls').show();
+                    $('#ListControls').hide();
+                })
+
+                $('#renameVoicemail').on('shown.bs.modal', function () {
+                    $('.voicemailName-error').html('');
+                })
+
+                $('#copyMoveModal').on('shown.bs.modal', function () {
+                    $('#copyMessage').attr('checked', false);
+                })
+
+                 $('#searchModal').on('shown.bs.modal', function () {
+                    var startDate = new Date();
+                    var endDate = new Date();
+
+                    if (intervalId > 0) {
+                        clearInterval(intervalId);
+                    }
+
+                    startDate.setHours(0, 0, 0, 0);
+                    endDate.setHours(23, 59, 59, 0)
+
+                    $('.date-range-error').html('');
+                    $('.start-date-range-error').html('');
+                    $('.end-date-range-error').html('');
+
+                    $("#startDate").kendoDateTimePicker({
+                        value: startDate
+                    });
+
+                    $("#endDate").kendoDateTimePicker({
+                        value: endDate,
+                    });
+
+                    $('.end-date-range-error').html('');
+                })
+
+                $(".modal").on("hidden.bs.modal", function () {
+                    $(this).find('form').trigger('reset');
+                });
+
+                $('#List').change(function () {
+                    $('#PhoneControls').hide();
+                    $('#ListControls').show();
+                });
+
+                $('#Phone').change(function () {
+                    $('#ListControls').hide();
+
+                    $('#PhoneControls').show();
+                });
+
+                playAndUpdate();
+
+                $("div#loading").hide();
+
+                //if (folderName != 'Call Recordings') {
+                //    intervalId = setInterval(updateMailbox, 30000);
+                //}
+
+                $("#selectAll").click(function () {
+
+                    if ($(this).is(':checked')) {
+                        $('.checkboxRow').prop('checked', true);
+                        selectAllItems();
+                    }
+                    else {
+                        $('.checkboxRow').prop('checked', false);
+                        unselectAllItems();
+                    }
+                });
+            });
+
+        </script>
+    
+
+    
+
+
+
+
+<div class="k-list-container k-popup k-group k-reset" id="ddlSwitchExtension-list" data-role="popup" style="display: none; position: absolute; width: 50%; min-width: 240px; max-width: 500px;"><table><tbody><tr><td width="150px"><b>Extension</b></td><td><b>Name</b></td></tr></tbody></table><div class="k-group-header" style="display:none"></div><div class="k-list-scroller" unselectable="on"><ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" id="ddlSwitchExtension_listbox" aria-live="polite" data-role="staticlist" role="listbox"><li tabindex="-1" role="option" unselectable="on" class="k-item k-state-focused" data-offset-index="0" id="a9ffc6e4-d222-412a-870a-75da5996ddbb"><table><tbody><tr><td width="150px">0</td><td> </td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="1"><table><tbody><tr><td width="150px">1</td><td>Ring Group</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="2"><table><tbody><tr><td width="150px">2</td><td>Call Center</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="3"><table><tbody><tr><td width="150px">9</td><td> </td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="4"><table><tbody><tr><td width="150px">700</td><td>Joe Blow</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="5"><table><tbody><tr><td width="150px">701</td><td>Ext 701</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="6"><table><tbody><tr><td width="150px">704</td><td>Ext 704</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="7"><table><tbody><tr><td width="150px">705</td><td>Ext 705</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="8"><table><tbody><tr><td width="150px">710</td><td>Chetu Test</td></tr></tbody></table></li><li tabindex="-1" role="option" unselectable="on" class="k-item" data-offset-index="9"><table><tbody><tr><td width="150px">750</td><td>Colm Test</td></tr></tbody></table></li></ul></div><div class="k-nodata" style="display:none"><div>No data found.</div></div></div></body></html>
